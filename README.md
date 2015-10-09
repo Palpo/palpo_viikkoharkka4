@@ -16,6 +16,7 @@ Tässä harjoituksessa voi esimerkiksi lukea käyttäen `DatastoreInputReader`:i
 1. [Toisessa viikkoharjoituksessa](https://github.com/Palpo/palpo_viikkoharkka2) tallennettiin eläimiä Datastore-tietokantaan. Voit jatkaa joko omasta 2. harjoituksen toteutuksestasi tai kloonata tämän repositorion, johon on jo valmiiksi lisätty [mapreduce-kirjasto](https://github.com/GoogleCloudPlatform/appengine-mapreduce).
 2. Laske MapReducen avulla kunkin eläimen saalistajien lukumäärä. Eli se kuinka monta kertaa kukin eläin esiintyy muiden eläinten saaliseläimenä.
 3. Tulosten esittämiseen ei tässä tarvitse keskittyä. Voit katsoa ne vaikka SDK:n [kehityskonsolin]( http://localhost:8000) Blobstore Viewerillä (jos tallensit käyttäen `FileOutputWriter`:iä). Tai App Enginessä ajaessasi [sen kehityskonsolista](https://console.developers.google.com/).
+4. Tallenna toteuttamasi muutokset GitHub:iin
 
 HUOM1: Tämä tehtävä ei nyt ole erityisen hyvä esimerkki MapReducen käytöstä. Ensinnäkin dataa on niin vähän, että MapReducen käytössä ei ole mitään järkeä; saman voisi tehdä tietokantakyselyinkin.
 
