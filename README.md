@@ -10,12 +10,12 @@ Python-spesifistä ohjeistusta on [luvussa 3](https://github.com/GoogleCloudPlat
 [App Enginen MapReduce Python-kirjasto](https://github.com/GoogleCloudPlatform/appengine-mapreduce) pitää itse käsin lisätä projektiin. Tähän projektiin se on jo lisätty hakemistoon `mapreduce`. 
 
 App Enginen MapReduce-toteutuksessa on [erilaisia tapoja lukea syötettä ja kirjoittaa tuloksia](https://github.com/GoogleCloudPlatform/appengine-mapreduce/wiki/3.4-Readers-and-Writers).
-Tässä harjoituksessa voi esimerkiksi lukea käyttäen `DatastoreInputReader`:ia ja kirjoittaa tulokset `FileOutputWriter`:illä Cloud Storageen.
+Tässä harjoituksessa voi esimerkiksi lukea käyttäen `DatastoreInputReader`:ia ja kirjoittaa tulokset `GoogleCloudStorageOutputWriter`:illä Cloud Storageen.
 
 ## Tehtävä: laske eläinten saalistajien lukumäärä MapReducella
 1. [Toisessa viikkoharjoituksessa](https://github.com/Palpo/palpo_viikkoharkka2) tallennettiin eläimiä Datastore-tietokantaan. Voit jatkaa joko omasta 2. harjoituksen toteutuksestasi tai kloonata tämän repositorion, johon on jo valmiiksi lisätty [mapreduce-kirjasto](https://github.com/GoogleCloudPlatform/appengine-mapreduce).
 2. Laske MapReducen avulla kunkin eläimen saalistajien lukumäärä. Eli se kuinka monta kertaa kukin eläin esiintyy muiden eläinten saaliseläimenä.
-3. Tulosten esittämiseen ei tässä tarvitse keskittyä. Voit katsoa ne vaikka SDK:n [kehityskonsolin]( http://localhost:8000) Blobstore Viewerillä (jos tallensit käyttäen `FileOutputWriter`:iä). Tai App Enginessä ajaessasi [sen kehityskonsolista](https://console.developers.google.com/).
+3. Tulosten esittämiseen ei tässä tarvitse keskittyä. Voit katsoa ne vaikka SDK:n [kehityskonsolin]( http://localhost:8000) Blobstore Viewerillä (jos tallensit käyttäen `GoogleCloudStorageOutputWriter`:iä). Tai App Enginessä ajaessasi [sen kehityskonsolista](https://console.developers.google.com/).
 
 HUOM1: Tämä tehtävä ei nyt ole erityisen hyvä esimerkki MapReducen käytöstä. Ensinnäkin dataa on niin vähän, että MapReducen käytössä ei ole mitään järkeä; saman voisi tehdä tietokantakyselyinkin.
 
